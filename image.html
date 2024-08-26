@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Tag</title>
+  </head>
+  <body>
+    <a href="https://www.google.co.in/" target="_blank">
+      <img
+        src="./images/city.jpg"
+        alt="A beautiful city image"
+        width="100%"
+        loading="lazy"
+        height="auto"
+      />
+    </a>
+
+    <img
+      src="./images/city.jpg"
+      alt="A beautiful city image"
+      width="100%"
+      loading="lazy"
+      height="auto"
+      usemap="#city"
+    />
+
+    <map name="city">
+      <area
+        shape="rect"
+        coords="0 0 80% 80%"
+        target="_blank"
+        href="https://www.google.co.in/"
+        alt="Link with google"
+      />
+    </map>
+  </body>
+</html>

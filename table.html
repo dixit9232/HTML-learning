@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table tag</title>
+    <style>
+      table {
+        border: 1px;
+        border-collapse: collapse;
+        font-size: 30px;
+        text-align: center;
+      }
+      tr,
+      td,
+      th {
+        border: 2px solid black;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="7">Time Table</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th rowspan="6">Hours</th>
+          <th>Monday</th>
+          <th>Tuesday</th>
+          <th>Wednesday</th>
+          <th>Thursday</th>
+          <th>Friday</th>
+          <th>Saturday</th>
+        </tr>
+        <tr>
+          <td>Maths</td>
+          <td>Maths</td>
+          <td>Maths</td>
+          <td>Maths</td>
+          <td>Maths</td>
+          <td>Maths</td>
+        </tr>
+        <tr>
+          <td>Science</td>
+          <td>Science</td>
+          <td>Science</td>
+          <td>Science</td>
+          <td>Science</td>
+          <td>Science</td>
+        </tr>
+        <tr>
+          <td colspan="6">Lunch</td>
+        </tr>
+        <tr>
+          <td>English</td>
+          <td>English</td>
+          <td>English</td>
+          <td>English</td>
+          <td>English</td>
+          <td rowspan="2">Games</td>
+        </tr>
+        <tr>
+          <td>Gujrati</td>
+          <td>Gujrati</td>
+          <td>Gujrati</td>
+          <td>Gujrati</td>
+          <td>Gujrati</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

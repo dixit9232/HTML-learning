@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form tag</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="name">Enter your name: </label>
+        <input autocomplete="off" required type="text" name="name" placeholder="Enter your name" />
+      </div>
+      <div>
+        <label for="email">Enter your email: </label>
+        <input autocomplete="off" required type="email" name="email" placeholder="Enter your email" />
+      </div>
+      <div>
+        <label for="password">Enter your password: </label>
+        <input autocomplete="off" required
+          type="password"
+          name="password"
+          placeholder="Enter your password"
+        />
+      </div>
+
+      <div>
+        <label for="gender">Gender: </label>
+        <input autocomplete="off" required type="radio" name="gender" value="male" />male
+        <input autocomplete="off" required type="radio" name="gender" value="female" />female
+      </div>
+
+      <div>
+        <label for="hobby">Hobby: </label>
+        <input autocomplete="off" required type="checkbox" name="hobby" value="singing" />singing
+        <input autocomplete="off" required type="checkbox" name="hobby" value="dancing" />dancing
+        <input autocomplete="off" required type="checkbox" name="hobby" value="writing" />writing
+        <input autocomplete="off" required type="checkbox" name="hobby" value="reading" />reading
+      </div>
+
+      <div>
+        <label for="message">Send Message: </label>
+        <textarea name="message" placeholder="Enter your message" rows="10" cols="50"></textarea>
+      </div>
+      <div>
+        <label for="country">Select your country: </label>
+        <select>
+          <option value="IN">India</option>
+          <option value="UAE">Dubai</option>
+          <option value="USA">America</option>
+          <option value="AUS">Australia</option>
+          <option value="SA">South Africa</option>
+          <option value="WI">Wast Indies</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="countrylist">Select your country: </label>
+        <input autocomplete="off" required
+          type="text"
+          id="countrylist"
+          name="countrylist"
+          list="countries"
+        />
+        <datalist id="countries">
+          <option value="IN">India</option>
+          <option value="PAK">Pakistan</option>
+          <option value="UAE">Dubai</option>
+          <option value="USA">America</option>
+          <option value="AUS">Australia</option>
+          <option value="SA">South Africa</option>
+          <option value="WI">Wast Indies</option>
+        </datalist>
+      </div>
+
+      <div>
+        <label for="age">Select your age: </label>
+        <input autocomplete="off" required type="number" name="age" min="18" max="50" value="18" />
+      </div>
+      <div>
+        <label for="file">Upload file</label>
+        <input autocomplete="off" required type="file" name="file" />
+      </div>
+      <div>
+        <input autocomplete="off" required type="submit" name="Submit" value="submit" />
+      </div>
+    </form>
+  </body>
+</html>
